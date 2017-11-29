@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="slides.css">
+  </head>
+  <body>
+    <section class="slide">
+      <h1 class="plr100 fsrem10">Processing Images using Web Audio API</h1>
+      <h2>
+        @rafael_sps
+      </h2>
+    </section>
+    <section class="slide">
+      <h1 class="fsrem5">You can load images to a canvas element</h1>
+      <img src="images/lenna2.png">
+    </section>
+    <section class="slide">
+      <img src="images/loading-image-to-canvas.png">
+    </section>
+    <section class="slide">
+      <img src="images/image-data-array2.png">
+    </section>
+    <section class="slide">
+      <img src="images/lena-first-line.png">
+      <img src="images/lena-first-line-graph.png">
+    </section>
+    <section class="slide">
+      <img src="images/lena-middle-line.png">
+      <img src="images/lena-middle-line-graph.png">
+    </section>
+    <section class="slide">
+      <h1 class="fsrem10">Web Audio API</h1>
+      <div class="audio-icons">
+        <img src="images/001-microphone.svg">
+        <img class="arrow" src="images/arrow.svg">
+        <img src="images/002-volume.svg">
+      </div>
+    </section>
+    <section class="slide">
+      <img src="images/playing-arrays.png">
+    </section>
+    <section class="slide">
+      <h1 class="fsrem7">Playing Arrays!</h1>
+      <h3 class="fsrem3 code">Math.sin(6.2830 * 150 * t)</h3>
+      <button class="button button-song-1">sin</button>
+      <h3 class="fsrem3 code">Math.exp(-30 * t) * Math.sin(6.2830 * 150 * t)</h3>
+      <button class="button button-song-2">exp</button>
+      <h3 class="fsrem3 code">Math.exp(-30 * t) * Math.random()</h3>
+      <button class="button button-song-3">random</button>
+    </section>
+    <!-- <section class="slide">
+      <h1 class="fsrem10">Filters</h1>
+      <button class="button play-filter-button">Play!</button>
+      <select id="filter-selector" class="fsrem3" name="">
+        <option value="lowpass">lowpass</option>
+        <option value="highpass">highpass</option>
+      </select>
+      <h3 class="fsrem3">Frequency</h3>
+      <input id="frequency-range" type="range" value="400" min="20" max="20000" />
+      <input type="text" value="400" id="current-frequency" />
+    </section> -->
+    <section class="slide">
+      <h1 class="fsrem10">Filters</h1>
+    </section>
+    <section class="slide">
+      <!-- <h1>Song wave</h1> -->
+      <img class="mh80p" src="images/song-filter-result.png">
+    </section>
+    <section class="slide">
+      <img class="mh90p" src="images/sound-low-pass-result.png">
+      <h4 class="">Low Pass</h4>
+    </section>
+    <section class="slide">
+      <!-- <h1 class="fsrem7">High Pass</h1> -->
+      <img class="mh90p" src="images/sound-high-pass-result-4.png">
+      <h4>High Pass</h4>
+    </section>
+    <section class="slide">
+      <h1 class="fsrem7">Remembering...</h1>
+      <img src="images/lena-middle-line.png">
+      <img src="images/lena-middle-line-graph.png">
+    </section>
+    <section class="slide">
+      <h1 class="fsrem7">Low pass result to red</h1>
+      <img src="images/lena-low-pass-red-result3.png">
+    </section>
+    <section class="slide">
+      <h1 class="fsrem7">Low pass result!</h1>
+      <img src="images/low-pass-result-lena2.png">
+    </section>
+    <section class="slide">
+      <h1 class="fsrem7">High pass result to red</h1>
+      <img src="images/lena-high-pass-red-result3.png">
+    </section>
+    <section class="slide">
+      <h1 class="fsrem7">High pass result!</h1>
+      <img src="images/high-pass-result-lena2.png">
+    </section>
+    <section class="slide">
+      <h1 class="fsrem10">Thank you!</h1>
+      <h3 class="fsrem5">@rafael_sps</h3>
+    </section>
+
+    <script src="jquery.js"></script>
+    <script src="slides.js"></script>
+    <script src="audio-utils.js"></script>
+    <script src="playing-array.js"></script>
+    <!-- <script src="filter-demo.js"></script> -->
+  </body>
+</html>
