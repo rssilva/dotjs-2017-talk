@@ -59,6 +59,19 @@ html, body {
   background-color: #BDBDBD;
 }
 
+.controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.controls button {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
 .slide .plr100 { padding: 0 100px; }
 .fsrem3 { font-size: 3rem; }
 .fsrem5 { font-size: 5rem; }

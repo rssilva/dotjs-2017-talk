@@ -38,6 +38,16 @@ GLOBALS.audioContext = new AudioContext();
     window.addEventListener('keyup', function (ev) {
       onKey(ev.keyCode)
     })
+
+    $('.back-button').on('click', function () {
+      --CURRENT_SLIDE
+      goToSlide()
+    })
+
+    $('.forward-button').on('click', function () {
+      ++CURRENT_SLIDE
+      goToSlide()
+    })
   }
 
   var onKey = function (keyCode) {
